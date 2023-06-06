@@ -1,0 +1,30 @@
+﻿1. Once you add Product and MyDbContext file and code. Add the packages for EF as follows
+	<package id="EntityFramework" version="6.4.4" targetFramework="net48" />
+
+2. Add the ProductService Class
+
+3. Add Console .net framework project and add connectionstring in config file.
+
+4. Enable-Migration
+
+5. Add-Migration Initial
+
+6. Update-Database
+
+7. Following connection string place it in executable project config file.
+	<connectionStrings>
+		<add name="MyDbContext" connectionString="Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=SampleEF6netframeworkNew;Integrated Security=True;" providerName="System.Data.SqlClient" />
+	</connectionStrings>
+
+
+8. Add class lib EF core and 3 packages as well.
+	<PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.5">
+
+9. Add console App similar to the app added in this sln. And add ref core class lib to this proj.
+
+10. make Core class lib as startup proj. and execute the following commands on Pkg Mngr Console
+	Add-Migration <NameforInitialMigration>
+
+	
