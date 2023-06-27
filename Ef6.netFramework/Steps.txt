@@ -3,15 +3,16 @@
 
 2. Add the ProductService Class
 
-3. Add Console .net framework project and add connectionstring in config file.
+3. Add the Console .net framework project and add the connection string in the config file.
 
-4. Enable-Migration
+4. Execute the following command of steps 4, 5, and 6 in the Package Manager Console
+	PM> Enable-Migration
 
-5. Add-Migration Initial
+5. PM> Add-Migration Initial
 
-6. Update-Database
+6. PM> Update-Database
 
-7. Following connection string place it in executable project config file.
+7. Following the connection string place it in an executable project config file.
 	<connectionStrings>
 		<add name="MyDbContext" connectionString="Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=SampleEF6netframeworkNew;Integrated Security=True;" providerName="System.Data.SqlClient" />
 	</connectionStrings>
